@@ -7,8 +7,13 @@ HEAD
 `slc loopback`
 
 ### Step 2: Generated node models for the tables in database
+`slc loopback:model`
 
 ### Step 3: Defined relations among models
+`slc loopback:relation`
+
+And 
+
 ``` 
 hasOne
 hasMany
