@@ -1,4 +1,3 @@
-HEAD
 # Green PI
 
 ### Preparations: Initialize and Populate Postgres Database
