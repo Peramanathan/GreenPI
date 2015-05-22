@@ -12,7 +12,7 @@ HEAD
 ### Step 3: Defined relations among models
 `slc loopback:relation`
 
-And 
+And defined relations in `server/models/*.JSON`
 
 ``` 
 hasOne
