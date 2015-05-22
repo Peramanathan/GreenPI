@@ -1,6 +1,6 @@
 # Green PI
 
-### Preparations: Initialize and Populate Postgres Database
+### Preparations: Initialized and Populated Postgres Database
 
 ### Step 1: Generated the project 
 `slc loopback`
