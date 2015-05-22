@@ -9,11 +9,25 @@ HEAD
 ### Step 2: Generated node models for the tables in database
 
 ### Step 3: Defined relations among models
+``` 
+hasOne
+hasMany
+belongsTo
+hasManyAndBelongsTo
+hasManyThrough
+hasOneThrough
+etc.,
+````
 
 ### Step 4: Created simple skelton tables for built-in loopback models 
 `access_tokens, acls, roles, role_mappings` (needed for authentication)
 
 ### Step 5: Migrated the built-in models to database 
+`access_tokens, acls, roles, role_mappings` (now these tables updated in backend database)
+
+### Step 6: Defined inherited authentication models in node project
+Hence loopbacks database `db` will not be used but main database server 
+For user authentication
 
 ### Project execution 
 `npm install && slc run .` 
