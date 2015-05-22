@@ -1,0 +1,106 @@
+{
+  "name": "HouseholdTimeseries",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "postgresql": {
+    "schema": "public",
+    "table": "household_timeseries"
+  },
+  "properties": {
+    "householdId": {
+      "type": "Number",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "household_id",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "NO"
+      },
+      "_selectable": false
+    },
+    "pointintime": {
+      "type": "String",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pointintime",
+        "dataType": "timestamp without time zone",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      },
+      "_selectable": false
+    },
+    "temperature": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 24,
+      "scale": null,
+      "postgresql": {
+        "columnName": "temperature",
+        "dataType": "real",
+        "dataLength": null,
+        "dataPrecision": 24,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "consumption": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 24,
+      "scale": null,
+      "postgresql": {
+        "columnName": "consumption",
+        "dataType": "real",
+        "dataLength": null,
+        "dataPrecision": 24,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+    "cost": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 24,
+      "scale": null,
+      "postgresql": {
+        "columnName": "cost",
+        "dataType": "real",
+        "dataLength": null,
+        "dataPrecision": 24,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "household": {
+      "type": "belongsTo",
+      "model": "HouseHold",
+      "foreignKey": "householdId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

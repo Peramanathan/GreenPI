@@ -1,0 +1,43 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  
+  "UserHousehold": {
+    "dataSource": "DBGreenPI",
+    "public": true
+  },
+  "Users": {
+    "dataSource": "DBGreenPI",
+    "public": true
+  },
+  "Households": {
+    "dataSource": "DBGreenPI",
+    "public": true
+  },
+  "HouseholdTimeseries": {
+    "dataSource": "DBGreenPI",
+    "public": true
+  },
+  "Acls": {
+    "dataSource": "DBGreenPI",
+    "public": true
+  },
+  "Roles": {
+    "dataSource": "DBGreenPI",
+    "public": true
+  },
+  "AccessTokens": {
+    "dataSource": "DBGreenPI",
+    "public": true
+  },
+  "RoleMappings": {
+    "dataSource": "DBGreenPI",
+    "public": true
+  }
+}

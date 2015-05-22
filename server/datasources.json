@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "DBGreenPI": {
+    "host": "localhost",
+    "port": 5433,
+    "database": "postgres",
+    "password": "million$",
+    "name": "DBGreenPI",
+    "connector": "postgresql",
+    "user": "postgres"
+  }
+}
